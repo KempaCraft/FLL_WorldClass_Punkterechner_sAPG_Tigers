@@ -23,7 +23,7 @@ public class TimePanel extends JPanel {
 	public TimePanel() {
 		
 		TimeManager tm = new TimeManager();
-		
+		tm.start();
 		
 		setBackground(Color.WHITE);
 		setLayout(null);
@@ -64,7 +64,6 @@ public class TimePanel extends JPanel {
 			public void actionPerformed(ActionEvent e) {
 				if(!TimeManager.runTimer){
 					TimeManager.runTimer = true;
-					tm.start();
 				}
 				else{
 					TimeManager.runTimer = false;
