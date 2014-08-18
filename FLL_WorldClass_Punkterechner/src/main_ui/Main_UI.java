@@ -21,8 +21,6 @@ public class Main_UI {
 		mainframe.setMinimumSize(new Dimension(500, 200));
 		// create the Frame
 		
-		
-		
 		JMenuBar menu = new JMenuBar();
 		mainframe.setJMenuBar(menu);
 		// Create Menu Bar
