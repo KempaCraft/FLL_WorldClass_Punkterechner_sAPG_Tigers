@@ -55,8 +55,10 @@ public class TimePanel extends JPanel {
 		btn_reset.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				TimeManager.runTimer = false;
+				btn_start.setSelected(false);
 				TimeManager.resetTimer();
 				TimeManager.updateTime();
+				btn_start.setText("Start");
 			}
 		});
 		
@@ -64,10 +66,12 @@ public class TimePanel extends JPanel {
 			public void actionPerformed(ActionEvent e) {
 				if(!TimeManager.runTimer){
 					TimeManager.runTimer = true;
+					btn_start.setText("Stop");
 				}
 				else{
 					TimeManager.runTimer = false;
 					TimeManager.updateTime();
+					btn_start.setText("Start");
 				}
 			}
 		});
@@ -76,6 +80,12 @@ public class TimePanel extends JPanel {
 			public void actionPerformed(ActionEvent e) {
 				TimeManager.runTimerDown = btn_switch.isSelected();
 				TimeManager.updateTime();
+				if(!TimeManager.runTimerDown){
+					btn_switch.setText("Runterzählen");
+				}
+				else{
+					btn_switch.setText("Hochzälen");
+				}
 			}
 		});
 
