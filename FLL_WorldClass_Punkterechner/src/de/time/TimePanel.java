@@ -22,7 +22,7 @@ public class TimePanel extends JPanel {
 	 */
 	public TimePanel() {
 		
-		TimeManager tm = new TimeManager();
+		Timemanager tm = new Timemanager();
 		tm.start();
 		
 		setBackground(Color.WHITE);
@@ -54,28 +54,28 @@ public class TimePanel extends JPanel {
 		
 		btn_reset.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				TimeManager.runTimer = false;
-				TimeManager.resetTimer();
-				TimeManager.updateTime();
+				Timemanager.runTimer = false;
+				Timemanager.resetTimer();
+				Timemanager.updateTime();
 			}
 		});
 		
 		btn_start.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(!TimeManager.runTimer){
-					TimeManager.runTimer = true;
+				if(!Timemanager.runTimer){
+					Timemanager.runTimer = true;
 				}
 				else{
-					TimeManager.runTimer = false;
-					TimeManager.updateTime();
+					Timemanager.runTimer = false;
+					Timemanager.updateTime();
 				}
 			}
 		});
 
 		btn_switch.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				TimeManager.runTimerDown = btn_switch.isSelected();
-				TimeManager.updateTime();
+				Timemanager.runTimerDown = btn_switch.isSelected();
+				Timemanager.updateTime();
 			}
 		});
 
