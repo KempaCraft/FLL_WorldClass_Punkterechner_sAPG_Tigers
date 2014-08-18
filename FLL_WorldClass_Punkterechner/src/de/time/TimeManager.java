@@ -74,8 +74,11 @@ public class TimeManager extends Thread{
 	}
 <<<<<<< HEAD:FLL_WorldClass_Punkterechner/src/de/time/TimeManager.java
 <<<<<<< HEAD:FLL_WorldClass_Punkterechner/src/de/time/TimeManager.java
+<<<<<<< HEAD:FLL_WorldClass_Punkterechner/src/de/time/TimeManager.java
 }
 =======
+=======
+>>>>>>> parent of 43e133f... Now working:FLL_WorldClass_Punkterechner/src/de/time/Timemanager.java
 =======
 >>>>>>> parent of 43e133f... Now working:FLL_WorldClass_Punkterechner/src/de/time/Timemanager.java
 }
