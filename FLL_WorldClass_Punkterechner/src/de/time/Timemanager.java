@@ -1,6 +1,6 @@
 package de.time;
 
-public class Timemanager extends Thread{
+public class TimeManager extends Thread{
 	public static int up_sec = 0;
 	public static int up_min = 0;
 	public static int down_sec = 30;
